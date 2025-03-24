@@ -40,6 +40,7 @@
             // 
             this.lbl1.AutoSize = true;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.Color.White;
             this.lbl1.Location = new System.Drawing.Point(12, 50);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(36, 39);
@@ -51,6 +52,7 @@
             // 
             this.lbl3.AutoSize = true;
             this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.ForeColor = System.Drawing.Color.White;
             this.lbl3.Location = new System.Drawing.Point(180, 50);
             this.lbl3.Name = "lbl3";
             this.lbl3.Size = new System.Drawing.Size(36, 39);
@@ -62,6 +64,7 @@
             // 
             this.lbl2.AutoSize = true;
             this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.Color.White;
             this.lbl2.Location = new System.Drawing.Point(96, 50);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(36, 39);
@@ -89,6 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(52)))), ((int)(((byte)(53)))));
             this.ClientSize = new System.Drawing.Size(229, 216);
             this.Controls.Add(this.btnGirar);
             this.Controls.Add(this.lbl2);

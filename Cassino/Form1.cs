@@ -40,15 +40,24 @@ namespace Cassino
             for (int i = 0;i < ciclos.Length; i++)
             {
                 ciclos[i] = r.Next(1, 21);
-                tela[i].ForeColor = Color.Black;
+                tela[i].ForeColor = Color.White;
             }
             Array.Sort(ciclos);
             btnGirar.Enabled = false;
             tmrGiro.Enabled = true;
         }
 
+        void verificarVitoria() // Se lasque pra tentar ganhar sem mudar o código
+        {
+            if (lbl1.Text == lbl2.Text && lbl2.Text == lbl3.Text)
+            {
+                lbl1.ForeColor = lbl2.ForeColor = lbl3.ForeColor = Color.Green;
+                MessageBox.Show("BIG WIIIIIIN!!!");
+            }
+        }
+
         private void tmrGiro_Tick(object sender, EventArgs e)
-        {                                                                   
+        {
             bool parado = true;
             for(int i = 0; i <ciclos.Length; i++)
             {
@@ -72,6 +81,7 @@ namespace Cassino
             {
                 tmrGiro.Enabled = false;
                 btnGirar .Enabled = true;
+                verificarVitoria();
             }
         }
     }
