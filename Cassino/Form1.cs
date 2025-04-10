@@ -82,6 +82,38 @@ namespace Cassino
                 tmrGiro.Enabled = false;
                 btnGirar .Enabled = true;
                 verificarVitoria();
+
+                lbxUltimos.Items.Add($"{roleta[0]}-{roleta[1]}-{roleta[2]}");
+            }
+        }
+
+        List<string> jogadas;
+        private void chbVitorias_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chbVitorias.Checked)
+            {
+                jogadas = new List<string>();
+                foreach (string item in lbxUltimos.Items)
+                {
+                    jogadas.Add(item);
+                }
+
+                lbxUltimos.Items.Clear();
+                foreach (string item in jogadas)
+                {
+                    string[] nums = item.Split('-');
+                    if (nums[0] == nums[1] && nums[1] == nums[2])
+                        lbxUltimos.Items.Add(item);
+                    
+                }
+            }
+            else
+            {
+                lbxUltimos.Items.Clear();
+                foreach (string item in jogadas)
+                {
+                    lbxUltimos.Items.Add(item);
+                }
             }
         }
     }

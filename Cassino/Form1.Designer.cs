@@ -34,6 +34,8 @@
             this.lbl2 = new System.Windows.Forms.Label();
             this.btnGirar = new System.Windows.Forms.Button();
             this.tmrGiro = new System.Windows.Forms.Timer(this.components);
+            this.lbxUltimos = new System.Windows.Forms.ListBox();
+            this.chbVitorias = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lbl1
@@ -74,11 +76,13 @@
             // 
             // btnGirar
             // 
+            this.btnGirar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGirar.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnGirar.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGirar.Location = new System.Drawing.Point(19, 129);
+            this.btnGirar.Location = new System.Drawing.Point(12, 118);
             this.btnGirar.Name = "btnGirar";
-            this.btnGirar.Size = new System.Drawing.Size(197, 51);
+            this.btnGirar.Size = new System.Drawing.Size(204, 51);
             this.btnGirar.TabIndex = 3;
             this.btnGirar.Text = "Girar";
             this.btnGirar.UseVisualStyleBackColor = true;
@@ -88,18 +92,42 @@
             // 
             this.tmrGiro.Tick += new System.EventHandler(this.tmrGiro_Tick);
             // 
+            // lbxUltimos
+            // 
+            this.lbxUltimos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxUltimos.FormattingEnabled = true;
+            this.lbxUltimos.ItemHeight = 25;
+            this.lbxUltimos.Location = new System.Drawing.Point(12, 187);
+            this.lbxUltimos.Name = "lbxUltimos";
+            this.lbxUltimos.Size = new System.Drawing.Size(204, 104);
+            this.lbxUltimos.TabIndex = 4;
+            // 
+            // chbVitorias
+            // 
+            this.chbVitorias.AutoSize = true;
+            this.chbVitorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chbVitorias.ForeColor = System.Drawing.Color.White;
+            this.chbVitorias.Location = new System.Drawing.Point(12, 297);
+            this.chbVitorias.Name = "chbVitorias";
+            this.chbVitorias.Size = new System.Drawing.Size(160, 28);
+            this.chbVitorias.TabIndex = 5;
+            this.chbVitorias.Text = "Apenas Vitórias";
+            this.chbVitorias.UseVisualStyleBackColor = true;
+            this.chbVitorias.CheckedChanged += new System.EventHandler(this.chbVitorias_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(52)))), ((int)(((byte)(53)))));
-            this.ClientSize = new System.Drawing.Size(229, 216);
+            this.ClientSize = new System.Drawing.Size(229, 335);
+            this.Controls.Add(this.chbVitorias);
+            this.Controls.Add(this.lbxUltimos);
             this.Controls.Add(this.btnGirar);
             this.Controls.Add(this.lbl2);
             this.Controls.Add(this.lbl3);
             this.Controls.Add(this.lbl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cassassino";
@@ -115,6 +143,8 @@
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Button btnGirar;
         private System.Windows.Forms.Timer tmrGiro;
+        private System.Windows.Forms.ListBox lbxUltimos;
+        private System.Windows.Forms.CheckBox chbVitorias;
     }
 }
 
