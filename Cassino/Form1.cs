@@ -53,6 +53,14 @@ namespace Cassino
             {
                 lbl1.ForeColor = lbl2.ForeColor = lbl3.ForeColor = Color.Green;
                 MessageBox.Show("BIG WIIIIIIN!!!");
+                lbxUltimos.Items.Add($"{roleta[0]}-{roleta[1]}-{roleta[2]}");
+            }
+            else
+            {
+                if (chbVitorias.Checked)
+                    jogadas.Add($"{roleta[0]}-{roleta[1]}-{roleta[2]}");
+                else
+                    lbxUltimos.Items.Add($"{roleta[0]}-{roleta[1]}-{roleta[2]}");
             }
         }
 
@@ -82,8 +90,6 @@ namespace Cassino
                 tmrGiro.Enabled = false;
                 btnGirar .Enabled = true;
                 verificarVitoria();
-
-                lbxUltimos.Items.Add($"{roleta[0]}-{roleta[1]}-{roleta[2]}");
             }
         }
 
@@ -104,7 +110,6 @@ namespace Cassino
                     string[] nums = item.Split('-');
                     if (nums[0] == nums[1] && nums[1] == nums[2])
                         lbxUltimos.Items.Add(item);
-                    
                 }
             }
             else
