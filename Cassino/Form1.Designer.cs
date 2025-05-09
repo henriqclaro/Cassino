@@ -79,12 +79,12 @@
             this.btnGirar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnGirar.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnGirar.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGirar.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGirar.Location = new System.Drawing.Point(12, 118);
             this.btnGirar.Name = "btnGirar";
-            this.btnGirar.Size = new System.Drawing.Size(204, 51);
-            this.btnGirar.TabIndex = 3;
-            this.btnGirar.Text = "Girar";
+            this.btnGirar.Size = new System.Drawing.Size(205, 51);
+            this.btnGirar.TabIndex = 0;
+            this.btnGirar.Text = "&Girar";
             this.btnGirar.UseVisualStyleBackColor = true;
             this.btnGirar.Click += new System.EventHandler(this.btnGirar_Click);
             // 
@@ -99,8 +99,8 @@
             this.lbxUltimos.ItemHeight = 25;
             this.lbxUltimos.Location = new System.Drawing.Point(12, 187);
             this.lbxUltimos.Name = "lbxUltimos";
-            this.lbxUltimos.Size = new System.Drawing.Size(204, 104);
-            this.lbxUltimos.TabIndex = 4;
+            this.lbxUltimos.Size = new System.Drawing.Size(205, 104);
+            this.lbxUltimos.TabIndex = 1;
             // 
             // chbVitorias
             // 
@@ -110,8 +110,8 @@
             this.chbVitorias.Location = new System.Drawing.Point(12, 297);
             this.chbVitorias.Name = "chbVitorias";
             this.chbVitorias.Size = new System.Drawing.Size(160, 28);
-            this.chbVitorias.TabIndex = 5;
-            this.chbVitorias.Text = "Apenas Vitórias";
+            this.chbVitorias.TabIndex = 2;
+            this.chbVitorias.Text = "Apenas &Vitórias";
             this.chbVitorias.UseVisualStyleBackColor = true;
             this.chbVitorias.CheckedChanged += new System.EventHandler(this.chbVitorias_CheckedChanged);
             // 
