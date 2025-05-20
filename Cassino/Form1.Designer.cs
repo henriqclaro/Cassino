@@ -94,7 +94,9 @@
             // 
             // lbxUltimos
             // 
+            this.lbxUltimos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(52)))), ((int)(((byte)(53)))));
             this.lbxUltimos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbxUltimos.ForeColor = System.Drawing.Color.White;
             this.lbxUltimos.FormattingEnabled = true;
             this.lbxUltimos.ItemHeight = 25;
             this.lbxUltimos.Location = new System.Drawing.Point(12, 187);
